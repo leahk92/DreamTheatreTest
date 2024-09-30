@@ -1,0 +1,776 @@
+@charset "UTF-8";
+@import url(./reset.css);
+
+/* 레이아웃 */
+body {
+   width: 100%;
+   overflow-x: hidden;
+}
+#landing-wrap,
+header,
+main,
+section,
+footer {
+   width: 100%;
+}
+.hidden {
+   display: none;
+}
+/* 랜딩 페이지 */
+#landing-wrap {
+   height: 100vh;
+   position: relative;
+}
+
+/* 헤더 - 햄버거 메뉴 */
+#check {
+   z-index: 3;
+   display: none;
+}
+label .close-btn {
+   display: none;
+}
+#check:checked ~ nav .menu-bars {
+   padding-top: 10%;
+   z-index: 2;
+   position: fixed;
+   background: rgba(48, 48, 48, 0.9);
+   top: 0%;
+   bottom: 0;
+   left: 0%;
+   right: 0;
+   display: flex;
+   justify-content: center;
+   align-items: flex-start;
+   gap: 4%;
+}
+#check:checked ~ nav .menu-bars .menu-bar {
+   width: 15%;
+}
+#check:checked ~ nav .menu-bars .menu-bar > a {
+   font-size: 1.8rem;
+}
+#check:checked ~ nav .dropdown-menu {
+   display: block;
+}
+#check:checked ~ nav .dropdown-menu > ul > li > a {
+   display: block;
+   text-align: center;
+   font-size: 1.3rem;
+   font-weight: 300;
+}
+#check:checked ~ nav label .menu-btn {
+   display: none;
+}
+#check:checked ~ nav label .close-btn {
+   z-index: 3;
+   display: block;
+   position: fixed;
+   top: 5%;
+   right: 5%;
+   color: #fff;
+   font-size: 50px;
+}
+label {
+   display: block;
+   font-size: 1.57rem;
+   cursor: pointer;
+   color: #fff;
+}
+
+/* 헤더 */
+#hd {
+   z-index: 10;
+   position: absolute;
+   top: 0;
+   left: 0;
+}
+#nav-menu.slidedown {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   background: rgba(0, 0, 0, 0.95);
+   animation: slidedown 0.4s forwards;
+}
+@keyframes slidedown {
+   form {
+      top: -250px;
+   }
+   to {
+      top: 0;
+      box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2);
+   }
+}
+#hd .hd_top {
+   width: 100%;
+
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-bottom: 1px solid #ffffff20;
+}
+/* 헤더 > 로고 */
+.logo {
+   padding: 25px 0;
+}
+.logo > a {
+   /* width: 100px; */
+}
+.logo img {
+   display: block;
+   width: 200px;
+}
+/* 헤더 > 내비 */
+nav {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 1rem 3rem;
+}
+nav img {
+   width: 33px;
+}
+nav .menu-btn {
+   display: block;
+}
+nav .menu-bars {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+}
+.menu-bar {
+   position: relative;
+   padding: 1em 1.7em;
+}
+.menu-bar > a {
+   color: #fff;
+   font-size: 1.4rem;
+   font-weight: 400;
+   padding-bottom: 2em;
+}
+
+nav .menu-bar .dropdown-menu {
+   width: 15em;
+   display: none;
+   border-radius: 10px;
+   position: absolute;
+   left: 50%;
+   transform: translateX(-50%);
+   top: 100%;
+   z-index: 5;
+   background-color: #222;
+   box-shadow: 0px 0px 20px -9px rgba(0, 0, 0, 0.5);
+}
+nav .menu-bars .menu-bar:hover .dropdown-menu {
+   display: block;
+}
+.dropdown-menu ul {
+   padding: 1em 0;
+}
+.dropdown-menu ul li {
+   padding: 0.5em 0;
+}
+.dropdown-menu ul li a {
+   color: #fff;
+   font-size: 1.2rem;
+   font-weight: 400;
+   padding: 0.5em 0;
+}
+.dropdown-menu ul li:hover a {
+   color: #ffb701;
+}
+.icon-bar {
+   display: flex;
+   align-items: center;
+}
+.icon-bar li {
+   padding: 0 10px;
+}
+.icon-bar li:last-child {
+   padding-right: 0;
+}
+.lang {
+   border-radius: 1.5rem;
+   border: 1px solid rgba(255, 255, 255, 0.2);
+   box-shadow: 0px 0px 4px 0px rgba(255, 255, 255, 0.5);
+   margin-right: 10px;
+}
+.lang a {
+   display: block;
+   color: #fff;
+   padding: 0.5rem 0.6rem;
+   font-size: 0.9rem;
+   font-weight: 600;
+   line-height: normal;
+}
+
+/* 메인 비주얼 */
+.slide {
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   top: 0;
+   left: 0;
+   opacity: 0;
+}
+.slide.active {
+   opacity: 1;
+}
+.slide > img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   z-index: -10;
+}
+
+.indicators {
+   position: absolute;
+   top: 50%;
+   transform: translateY(-50%);
+   right: 2%;
+   z-index: 0;
+}
+.indicator {
+   list-style: none;
+   width: 15px;
+   height: 15px;
+   border-radius: 50%;
+   background-color: #fff;
+   cursor: pointer;
+   margin: 70% 0;
+}
+.indicator.active {
+   background-color: #ffb701;
+   box-shadow: 0 0 2px rgba(0, 0, 0, 0.75);
+}
+.main-info {
+   color: #fff;
+   position: absolute;
+   bottom: 12%;
+   left: 10%;
+}
+.main-info h2 {
+   font-size: 2.3rem;
+   font-weight: 500;
+   opacity: 0;
+   transform: translateY(1rem);
+   animation: FadeInUp 1s ease-in-out 1 forwards;
+   animation-delay: 0.65s;
+   transition: 0s;
+}
+.main-info p {
+   font-size: 1.9rem;
+   font-weight: 400;
+   font-family: "Montserrat", sans-serif;
+   margin: 5px 0 25px;
+   opacity: 0;
+   transform: translateY(1rem);
+   animation: FadeInUp 1s ease-in-out 1 forwards;
+   animation-delay: 0.65s;
+   transition: 0s;
+}
+.main-info button {
+   font-size: 1rem;
+   font-weight: 600;
+   color: #333;
+   position: relative;
+   padding: 0.75em 2.5em 0.75em 1.25em;
+   background: #fff;
+   border-radius: 15px;
+   text-align: left;
+   opacity: 0;
+   transform: translateY(1rem);
+   animation: FadeInUp 1s ease-in-out 1 forwards;
+   animation-delay: 0.95s;
+   transition: 0s;
+}
+@keyframes FadeInUp {
+   0% {
+      opacity: 0;
+      transform: translateY(1rem);
+   }
+   100% {
+      opacity: 1;
+      transform: translateY(0);
+   }
+}
+.main-info button > img {
+   width: 0.85em;
+   position: absolute;
+   top: 50.5%;
+   right: 10%;
+   transform: translateY(-50%);
+}
+
+/* 본문1 */
+.section01 {
+   margin: 0 auto;
+}
+/* 프로덕션 & 캘린더 */
+.overviewNavi {
+   width: 95%;
+   margin: 0 auto;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 0.7% 0;
+   margin-top: 2%;
+}
+.overview-tabs {
+   display: flex;
+   align-items: center;
+}
+.overview-tabs i {
+   margin-right: 0.625em;
+}
+.overview-tabs button {
+   font-size: 1.5rem;
+   padding: 0.625em;
+   margin-right: 1.875em;
+}
+.overview-filters {
+   display: flex;
+}
+.overview-filters button {
+   margin: 0 0.9em;
+   font-size: 1.2rem;
+   font-weight: 500;
+   opacity: 0.6;
+}
+.overview-filters button:first-child {
+   opacity: 1;
+}
+.overview-filters button:hover {
+   opacity: 1;
+}
+
+.monthNavi {
+   display: flex;
+   justify-content: space-between;
+   border-top: 1px solid #7e7e7e;
+}
+.monthNavi > h3 {
+   margin: 0 auto;
+   font-size: 2rem;
+   font-weight: 600;
+   /* font-family: "Red Hat Display", sans-serif; */
+   font-family: "Montserrat", sans-serif;
+   align-content: center;
+}
+.monthNavi .arr img {
+   width: 22px;
+}
+.month-tabs {
+   display: flex;
+   align-items: center;
+}
+.month-tabs li {
+   height: 75px;
+   border-right: 1px solid #7e7e7e;
+}
+.month-tabs li:first-child {
+   border-left: 1px solid #7e7e7e;
+}
+.month-tabs li:last-child {
+   border-right: none;
+}
+.month-tabs li span {
+   /* font-family: "Red Hat Display", sans-serif; */
+   font-family: "Montserrat", sans-serif;
+}
+.month-tabs li button {
+   font-size: 1.2rem;
+   font-weight: 400;
+   padding: 0 1.6em;
+   width: 100%;
+   height: 100%;
+}
+.month-tabs li button:hover {
+   background: #ffb701;
+}
+/* .month-tabs #tab-8{
+    color: #fff;
+    background-color: #333;
+} */
+.month-tabs li .select {
+   color: #fff;
+   background-color: #222;
+}
+.month .move-btns {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   width: 10%;
+}
+
+.month .move-btns img {
+   width: 28px;
+}
+
+/* (수정)테스트 - 탭 패널 */
+.tabContents {
+   background-color: #222;
+}
+
+.panelBox {
+   background-color: #222;
+}
+.pdContent {
+   display: flex;
+   justify-content: center;
+   gap: 5%;
+   padding: 5.7em 0;
+   overflow: hidden;
+}
+.vacant {
+   color: #fff;
+   font-size: 1.3rem;
+   letter-spacing: 1px;
+   padding: 13%;
+}
+.pdContent .poster {
+   display: block;
+   width: 350px;
+
+   position: relative;
+   overflow: hidden;
+   border: 1.5px solid #333;
+}
+.pdContent em {
+   display: inline-block;
+   padding: 0.65em 0.85em;
+   line-height: 1.3;
+   position: absolute;
+   top: 0;
+   left: 0;
+   background: #e3333e;
+   color: #fff;
+   z-index: 9;
+   font-size: 0.75rem;
+   font-weight: 400;
+   letter-spacing: 0.1rem;
+}
+.pdContent .poster img {
+   height: 100%;
+   object-fit: cover;
+
+   width: 100%;
+   display: block;
+   transition: transform 0.5s;
+}
+.pdContent .poster > .overlay {
+   color: #fff;
+   height: 0;
+   width: 100%;
+   position: absolute;
+   left: 0;
+   bottom: -5%;
+   overflow: hidden;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   padding: 10px 20px;
+   text-align: center;
+   font-weight: 300;
+   transition: height 0.5s;
+   z-index: 9;
+}
+
+.poster > .overlay > p:nth-child(1) {
+   padding-bottom: 3px;
+   font-family: "Montserrat", sans-serif;
+   font-weight: 300;
+   letter-spacing: 0.15rem;
+   border-bottom: 1px solid #ccc;
+}
+.poster > .overlay > p:nth-child(2) {
+   font-size: 1.7rem;
+   font-weight: 600;
+   padding: 2.125em 0 0.625em;
+}
+.poster > .overlay > p:nth-child(3) {
+   font-size: 1.5rem;
+   font-weight: 300;
+   font-family: "Montserrat", sans-serif;
+   padding-bottom: 1.5em;
+}
+.poster > .overlay > button {
+   font-size: 1rem;
+   letter-spacing: 0.1rem;
+   font-weight: 700;
+   margin-top: 2.5em;
+   padding: 0.938em 3.438em;
+   border-radius: 0.3em;
+   font-family: "Montserrat", sans-serif;
+   background: #ffb701;
+}
+.poster:hover {
+   border: 1.5px solid #fff;
+   transition: 0.5s;
+}
+.poster:hover img {
+   transform: scale(1.1);
+   transition: 0.5s;
+   filter: brightness(20%);
+}
+.poster:hover .overlay {
+   height: 100%;
+   transition: 0.5s;
+}
+.poster:hover em {
+   display: none;
+}
+
+/* 캘린더 탭 패널 */
+.calContent > a {
+   display: flex;
+   align-items: center;
+   justify-content: flex-start;
+   padding: 1.2rem 1rem;
+   border-bottom: 1px solid #7e7e7e;
+}
+.calContent .date {
+   width: 25%;
+   display: flex;
+   align-items: center;
+   margin-left: 5%;
+}
+.calContent .date p {
+   font-size: 1.35rem;
+   font-weight: 600;
+   font-family: "Montserrat", sans-serif;
+   color: #fff;
+   line-height: 1;
+}
+.calContent .date p:first-child {
+   width: 55%;
+}
+.calContent a:hover {
+   background-color: #ffb701;
+   color: #000;
+}
+.calContent a:hover .date p {
+   color: #000;
+}
+/* 공연 제목 */
+.calContent .playttl {
+   text-align: center;
+   width: 55%;
+}
+.calContent .playttl > p {
+   font-size: 1.33rem;
+   font-weight: 200;
+   display: inline-block;
+   color: #fff;
+   padding: 0 10px;
+}
+.calContent a:hover .playttl p {
+   font-size: 1.3rem;
+   font-weight: 600;
+   color: #000;
+   border-bottom: 1.5px solid #333;
+}
+.calContent .book-btn img {
+   width: 37%;
+}
+/* 티켓예매 버튼 */
+.book-btn {
+   display: inline-block;
+
+   text-align: center;
+}
+.book-btn img.black {
+   display: none;
+}
+.calContent a:hover img.white {
+   display: none;
+}
+.calContent a:hover img.black {
+   display: inline-block;
+}
+
+/* 본문2 */
+/* 주요 서비스 - 아이콘 형식*/
+.service {
+   width: 100%;
+   margin: 10% auto;
+}
+.service ul {
+   display: flex;
+   justify-content: center;
+}
+.service ul li {
+   margin: 0 4%;
+}
+.service li a {
+   display: block;
+   text-align: center;
+   font-size: 1.3rem;
+   font-weight: 500;
+   color: #000;
+}
+.service li img {
+   display: block;
+   margin: 0 auto 1.25em;
+   width: 2.3em;
+}
+
+/* 본문3 */
+/* 인포 */
+#info {
+   width: 100%;
+}
+#info .info_inr {
+   display: flex;
+}
+.info_inr .n_list {
+   width: 85%;
+}
+.info_inr ul {
+   display: flex;
+   justify-content: center;
+}
+.info_inr .n_list li {
+   width: 30%;
+   height: 25rem;
+   margin-left: 2%;
+   display: flex;
+   flex-direction: column;
+   box-sizing: border-box;
+   border: 1px solid #c0c0c0;
+   position: relative;
+}
+.info_inr .n_list li:first-child {
+   margin-left: 0;
+}
+.info_inr .notice {
+   padding-top: 5.25em;
+}
+.info_inr .notice h4 {
+   color: #222;
+   font-weight: 600;
+   font-size: 2.2rem;
+}
+#info .day {
+   padding-bottom: 20px;
+   display: flex;
+   align-items: center;
+   margin: 43px 0px 10px 45px;
+}
+
+#info .day .day-num {
+   font-family: "Montserrat", sans-serif;
+   font-size: 50px;
+   font-weight: 600;
+   color: #111;
+   margin-right: 10px;
+}
+#info .day .day-month {
+   font-family: "Montserrat", sans-serif;
+   font-size: 20px;
+   line-height: 1em;
+   color: #111;
+}
+
+#info .txt {
+   margin: 0 35px;
+}
+
+#info .txt .cont {
+   font-size: 1.55rem;
+   font-family: "Noto Sans KR";
+   position: relative;
+   padding-top: 1.75em;
+   font-weight: 300;
+   border-top: 1px solid #c0c0c0;
+}
+#info .txt .cont p {
+   color: #111;
+}
+#info .n_btn {
+   position: absolute;
+   bottom: 20px;
+   right: 20px;
+}
+#info .n_btn a {
+   display: inline-block;
+   text-align: center;
+   padding: 0.625rem 0.7rem;
+   background: #01182e;
+}
+
+#info .n_btn img {
+   width: 1.5rem;
+}
+#info .more {
+   position: relative;
+}
+/* 푸터 */
+footer {
+   margin-top: 5%;
+}
+footer .infoArea {
+   width: 100%;
+   border-bottom: 1px solid #000;
+}
+footer .info {
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   padding: 1.2% 0;
+   background-color: #222;
+}
+footer .info li {
+   padding: 0 3.5%;
+}
+footer .info a {
+   font-size: 0.95rem;
+   vertical-align: baseline;
+   color: #fff;
+}
+footer > .ft-container {
+   width: 90%;
+   margin: 0 auto;
+   border-left: 1px solid #7e7e7e;
+   border-right: 1px solid #7e7e7e;
+}
+footer .addrArea {
+   display: flex;
+   align-items: center;
+   justify-content: flex-start;
+   gap: 2.5%;
+   padding: 5%;
+}
+footer .addrArea address {
+   font-size: 0.94rem;
+   color: #888;
+   flex-grow: 2;
+}
+footer .addrArea address p {
+   margin-bottom: 5px;
+}
+footer .addrArea address p:last-child {
+   margin-bottom: 0;
+}
+footer .addrArea address span {
+   padding-right: 10px;
+}
+footer .addrArea .link a {
+   display: inline-block;
+   margin: 0 10px;
+}
+
+footer .ft-container > p {
+   margin: 0 50px;
+   padding: 2.5% 0;
+   border-top: 1px solid #ccc;
+   text-align: center;
+   font-size: 15px;
+   color: #555;
+   /* font-family: "Montserrat", sans-serif; */
+   font-family: "Red Hat Display", sans-serif;
+   font-weight: 700;
+}

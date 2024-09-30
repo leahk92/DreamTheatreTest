@@ -1,0 +1,90 @@
+                <!-- 회원 서비스 - 카드 형식 -->
+                <div class="cardArea">
+                    <div class="card">
+                        <img src="./image/ballerinas-1376250_1280.jpg" alt="">
+                        <div class="textBox">
+                            <p class="card-title">멤버십 혜택</p>
+                            <span><img src="./image/arr_white.png" alt=""></span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./image/theatre-4023278_1280.jpg" alt="">
+                        <div class="textBox">
+                            <p class="card-title">회원 이벤트</p>
+                            <span><img src="./image/arr_white.png" alt=""></span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./image/stage-6218164_1280.jpg" alt="">
+                        <div class="textBox">
+                            <p class="card-title">제휴할인 안내</p>
+                            <span><img src="./image/arr_white.png" alt=""></span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./image/headlights-802633_1280.jpg" alt="">
+                        <div class="textBox">
+                            <p class="card-title">장애인 및 국가유공자</p>
+                            <span><img src="./image/arr_white.png" alt=""></span>
+                        </div>
+                    </div>
+                </div>
+
+
+/* 회원 서비스 - 카드 형식 */
+.cardArea{
+    display: flex;
+    gap: 0.5%;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+/* 회원 서비스 - 카드 형식 */
+ .card{
+    /* width: 500px; */
+    height: 400px;
+    /* box-shadow: 5px 5px 20px black; */
+    overflow: hidden;
+    position: relative;
+}
+.card > img{
+    height: 400px;
+    width: 400px;
+    border-radius: 3px;    
+    object-fit: cover;
+    filter: brightness(35%);
+}
+.textBox{
+    height: 70px;
+    width: 400px;
+    padding: 15px;
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 0px;
+    background: rgb(27, 27, 27, .7);
+    color: white;
+    transition: .5s;
+}
+.card-title{
+    margin-left: 20px;
+    font-size: 28px;
+}
+.textBox > span
+{  display:block;
+    margin-top: 8px;
+    margin-left: 20px;
+    visibility: hidden;
+    opacity: 0;
+}
+.card:hover{
+    cursor: pointer;
+}
+.card:hover .textBox{
+    height: 120px;
+    bottom: 0px;
+    background: black;
+}
+.card:hover span{
+    opacity: 1;
+    visibility: visible;
+}

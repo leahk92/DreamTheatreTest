@@ -1,0 +1,77 @@
+// 탭 - 오버뷰
+const overviewTabs = document.querySelectorAll(".overview-tabs");
+const pdTab = document.getElementById("production");
+const calTab = document.getElementById("calendar");
+
+// 탭 - 월
+const monthTabs = document.querySelector(".month-tabs");
+const monthTab = document.querySelectorAll(".month-tabs [role='tab']");
+
+// 패널
+const panelContainer = document.querySelector(".tabContents");
+const panelBoxes = document.querySelectorAll(".panelBox");
+const pdPanel = document.querySelectorAll(".pdContent");
+const calPanel = document.querySelectorAll(".calContent");
+
+const ACTIVE_CLASSNAME = "active";
+
+// 초기설정
+function initSet(){
+    const firstTab = monthTab[7]; // 8월 탭을 첫 번째로 설정
+    const firstPanel = document.getElementById(firstTab.getAttribute("aria-controls")); // 해당 탭에 연결된 패널 선택
+
+    // 모든 패널을 숨김 처리
+    panelBoxes.forEach(panel => (panel.hidden = true));
+    pdPanel.forEach(panel => (panel.hidden = true));
+
+    // 첫 번째 탭 활성화 및 해당 패널 보이기
+    firstTab.setAttribute("aria-selected", "true");
+    firstPanel.hidden = false;
+
+    // 활성화 탭 색상 표시
+    firstTab.classList.add(ACTIVE_CLASSNAME);
+}
+// 초기설정 호출
+initSet();
+
+
+function switchTab(newTab){
+    const activeTab = monthTabs.querySelector('[aria-selected="true"]'); //기존 활성화탭 지정
+    const activePanelID = activeTab.getAttribute("aria-controls");
+    const activePanel = document.getElementById(activePanelID);
+
+    // 기존 활성화된 탭과 패널 비활성화
+    activeTab.setAttribute("aria-selected", "false"); //기존 활성화탭을 비활성화
+    activePanel.hidden = true; //기존 활성화패널 숨기기
+
+    // 새로 선택된 탭과 해당 패널 활성화
+    newTab.setAttribute("aria-selected", "true");
+    const newPanelID = newTab.getAttribute("aria-controls"); 
+    const newPanel = document.getElementById(newPanelID);
+    newPanel.hidden = false;
+    // 탭 색상 변경
+    newTab.classList.add(ACTIVE_CLASSNAME);
+    activeTab.classList.remove(ACTIVE_CLASSNAME);
+    
+
+    // 프로덕션 콘텐츠
+
+    // 캘린더 콘텐츠
+
+}
+// 월 탭 : 버튼 클릭 이벤트
+monthTab.forEach(tab => {
+    tab.addEventListener("click", (e) => {
+        const clickedTab = e.target.closest("button");
+        if (clickedTab && clickedTab !== monthTabs.querySelector('[aria-selected="true"]')) {
+            switchTab(clickedTab);
+        }
+    });
+});
+
+
+// 캘린더탭 눌럿을때 월탭이랑 연결되게 해야됨..
+// 캘린더 탭을 눌렀을 때.
+calTab.addEventListener('click', () => {
+    activateTab(calTab, calendarPanel);
+});

@@ -1,0 +1,1864 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>드림씨어터</title>
+      <link rel="stylesheet" href="./css/header.css">
+      <link rel="stylesheet" href="./css/reset.css" />
+      <link rel="stylesheet" href="./css/style.css" />
+      <link rel="stylesheet" href="./css/media.css" />
+      <!-- AOS애니메이션 -->
+      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <!-- 폰트어썸 cdn -->
+      <link
+         rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      />
+      <!-- 제이쿼리 -->
+      <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+   </head>
+   <body>
+      <!-- 랜딩 페이지 -->
+      <div id="landing-wrap">
+         <!-- 헤더 -->
+         <header id="hd">
+            <div class="hd_top">
+               <h1 class="logo">
+                  <a href="#"><img src="./image/Asset_logo.png" title="드림씨어터 로고" /></a>
+               </h1>
+            </div>
+            <!-- 내비 -->
+            <input type="checkbox" id="check" />
+            <nav id="nav-menu">
+               <label for="check">
+                  <i class="fas fa-bars menu-btn"></i>
+                  <i class="fas fa-times close-btn"></i>
+               </label>
+               <!-- 메뉴 -->
+               <ul class="menu-bars">
+                  <li class="menu-bar">
+                     <a href="#">드림씨어터</a>
+                     <div class="dropdown-menu">
+                        <ul>
+                           <li class="a"><a href="#">공연장소개</a></li>
+                           <li class="a"><a href="#">공간안내</a></li>
+                           <li class="a"><a href="#">좌석배치도</a></li>
+                           <li class="a"><a href="#">부가서비스</a></li>
+                           <li class="a"><a href="#">오시는길</a></li>
+                        </ul>
+                     </div>
+                  </li>
+                  <li class="menu-bar">
+                     <a href="#">공연/예매</a>
+                     <div class="dropdown-menu">
+                        <ul>
+                           <li class="a"><a href="#">공연안내</a></li>
+                           <li class="a"><a href="#">시즌패키지</a></li>
+                           <li class="a"><a href="#">공연일정</a></li>
+                           <li class="a"><a href="#">예매안내</a></li>
+                        </ul>
+                     </div>
+                  </li>
+                  <li class="menu-bar">
+                     <a href="#">대관</a>
+                     <div class="dropdown-menu">
+                        <ul>
+                           <li class="a"><a href="#">대관절차</a></li>
+                           <li class="a"><a href="#">대관시설</a></li>
+                           <li class="a"><a href="#">대관료</a></li>
+                        </ul>
+                     </div>
+                  </li>
+                  <li class="menu-bar">
+                     <a href="#">멤버십</a>
+                     <div class="dropdown-menu">
+                        <ul>
+                           <li class="a"><a href="#">멤버십안내</a></li>
+                           <li class="a"><a href="#">회원이벤트</a></li>
+                        </ul>
+                     </div>
+                  </li>
+                  <li class="menu-bar">
+                     <a href="#">이용안내</a>
+                     <div class="dropdown-menu">
+                        <ul>
+                           <li class="a"><a href="#">공지사항</a></li>
+                           <li class="a"><a href="#">FAQ</a></li>
+                           <li class="a"><a href="#">장애인이용안내</a></li>
+                           <li class="a"><a href="#">제휴할인</a></li>
+                           <li class="a"><a href="#">CONTACT US</a></li>
+                        </ul>
+                     </div>
+                  </li>
+               </ul>
+               <!-- 아이콘 바 -->
+               <ul class="icon-bar">
+                  <li class="lang"><a href="#">ENG</a></li>
+                  <li class="login">
+                     <a href="#"><img src="./image/user-white.png" title="로그인" /></a>
+                  </li>
+                  <li class="search">
+                     <a href="#"><img src="./image/search-white.png" title="검색" /></a>
+                  </li>
+               </ul>
+            </nav>
+            <!-- //내비 -->
+         </header>
+         <!-- //헤더 -->
+         <!-- 메인 비주얼 -->
+         <main>
+            <!-- <div class="img-slider"></div> -->
+            <div class="slide active">
+               <img src="./image/mainVisual/hamelet.gif" alt="연극 햄릿(포스터)">
+               <div class="main-info">
+                  <h2>연극 <햄릿></h2>
+                  <p>2024.10.04(금)-2024.10.05(토)</p>
+                  <button>
+                     바로가기
+                     <img src="./image/next.png" alt="바로가기 화살표 아이콘" />
+                  </button>
+               </div>   
+            </div> 
+            <div class="slide">
+               <img src="./image/mainVisual/red.jpg" alt="연극 레드(포스터)">
+               <div class="main-info">
+                  <h2>연극 <레드></h2>
+                  <p>2024.10.11(금)-2024.10.12(토)</p>
+                  <button>
+                     바로가기
+                     <img src="./image/next.png" alt="바로가기 화살표 아이콘" />
+                  </button>
+               </div>
+            </div>
+            <div class="slide">
+               <img src="./image/mainVisual/phantomOf-100.jpg" alt="뮤지컬 오페라의 유령(포스터)">
+               <div class="main-info">
+                  <h2>뮤지컬 <오페라의 유령></h2>
+                  <p>2024.12.13(금)-2024.12.22(일)</p>
+                  <button>
+                     바로가기
+                     <img src="./image/next.png" alt="바로가기 화살표 아이콘" />
+                  </button>
+               </div>
+            </div>
+            <ul class="indicators">
+               <li class="indicator active"></li>
+               <li class="indicator"></li>
+               <li class="indicator"></li>
+            </ul>
+         </main>
+         <!-- //메인 비주얼 -->
+      </div>
+      <!-- 본문 -->
+      <!-- 섹션1 -->
+      <!-- 프로덕션 & 캘린더 -->
+      <section class="section01">
+         <!-- 프로덕션/캘린더 탭 내비 -->
+         <div class="overviewNavi">
+            <ul class="overview-tabs" role="tablist" aria-labelledby="year">
+               <li>
+                  <button
+                     class="btn-menu-tab"
+                     id="production"
+                     role="tab"
+                     aria-controls="tabContents-pd"
+                     aria-selected="true"
+                  >
+                     <i class="fa-solid fa-masks-theater"></i>프로덕션
+                  </button>
+               </li>
+               <li>
+                  <button
+                     class="btn-menu-tab"
+                     id="calendar"
+                     role="tab"
+                     aria-controls="tabContents-cal"
+                     aria-selected="false"
+                  >
+                     <i class="fa-regular fa-calendar"></i>캘린더
+                  </button>
+               </li>
+            </ul>
+            <div class="overview-filters">
+               <button>전체</button>
+               <button>뮤지컬</button>
+               <button>콘서트</button>
+               <button>연극</button>
+               <button>무용</button>
+               <button>프로그램</button>
+               <button>기타</button>
+            </div>
+         </div>
+         <!-- 월(月) 탭 내비 -->
+         <div class="monthNavi">
+            <h3 id="year">2024</h3>
+            <ul class="month-tabs" role="tablist" aria-labelledby="year">
+               <li>
+                  <button id="tab-1" role="tab" aria-controls="tabPanel-01" aria-selected="false">
+                     1월
+                  </button>
+               </li>
+               <li>
+                  <button id="tab-2" role="tab" aria-controls="tabPanel-02" aria-selected="false">
+                     2월
+                  </button>
+               </li>
+               <li>
+                  <button id="tab-3" role="tab" aria-controls="tabPanel-03" aria-selected="false">
+                     3월
+                  </button>
+               </li>
+               <li>
+                  <button id="tab-4" role="tab" aria-controls="tabPanel-04" aria-selected="false">
+                     4월
+                  </button>
+               </li>
+               <li>
+                  <button id="tab-5" role="tab" aria-controls="tabPanel-05" aria-selected="false">
+                     5월
+                  </button>
+               </li>
+               <li>
+                  <button id="tab-6" role="tab" aria-controls="tabPanel-06" aria-selected="false">
+                     6월
+                  </button>
+               </li>
+               <li class="july">
+                  <button id="tab-7" role="tab" aria-controls="tabPanel-07" aria-selected="false">
+                     7월
+                  </button>
+               </li>
+               <li>
+                  <button id="tab-8" role="tab" aria-controls="tabPanel-08" aria-selected="false">
+                     8월
+                  </button>
+               </li>
+               <li>
+                  <button id="tab-9" role="tab" aria-controls="tabPanel-09" aria-selected="false">
+                     9월
+                  </button>
+               </li>
+               <li>
+                  <button id="tab-10" role="tab" aria-controls="tabPanel-10" aria-selected="false">
+                     10월
+                  </button>
+               </li>
+               <li>
+                  <button id="tab-11" role="tab" aria-controls="tabPanel-11" aria-selected="false">
+                     11월
+                  </button>
+               </li>
+               <li>
+                  <button id="tab-12" role="tab" aria-controls="tabPanel-12" aria-selected="false">
+                     12월
+                  </button>
+               </li>
+               <li class="arr-prev">
+                  <button id="tab-prev" role="button" class="arr">
+                     <img src="./image/prev.png" alt="이전 화살표 아이콘" />
+                  </button>
+               </li>
+               <li class="arr-next">
+                  <button id="tab-next" role="button" class="arr">
+                     <img src="./image/next.png" alt="다음 화살표 아이콘" />
+                  </button>
+               </li>
+            </ul>
+         </div>
+         <!-- 탭 패널 -->
+         <div class="tabContents" >
+            <ul
+               class="panelBox"
+               id="tabPanel-01"
+               role="tabpanel"
+               tabindex="0"
+               aria-labelledby="tab-1"
+               hidden
+            >
+               <li
+                  class="pdContent vacant"
+                  id="tabContents-pd"
+                  role="tabpanel"
+                  tabindex="0"
+                  aria-labelledby="production"
+               >
+                  해당 날짜에 공연이 없습니다.
+               </li>
+               <li
+                  class="calContent"
+                  id="tabContents-cal"
+                  role="tabpanel"
+                  tabindex="0"
+                  aria-labelledby="calendar"
+                  hidden
+               >
+                  해당 날짜에 공연이 없습니다.
+               </li>
+            </ul>
+            <ul
+               class="panelBox"
+               id="tabPanel-02"
+               role="tabpanel"
+               tabindex="0"
+               aria-labelledby="tab-2"
+               hidden
+            >
+               <li
+                  class="pdContent vacant"
+                  id="tabContents-pd"
+                  role="tabpanel"
+                  tabindex="0"
+                  aria-labelledby="production"
+                  hidden
+               >
+                  해당 날짜에 공연이 없습니다.
+               </li>
+               <li
+                  class="calContent"
+                  id="tabContents-cal"
+                  role="tabpanel"
+                  tabindex="0"
+                  aria-labelledby="calendar"
+                  hidden
+               >
+                  해당 날짜에 공연이 없습니다.
+               </li>
+            </ul>
+            <ul
+               class="panelBox"
+               id="tabPanel-03"
+               role="tabpanel"
+               tabindex="0"
+               aria-labelledby="tab-3"
+               hidden
+            >
+               <li
+                  class="pdContent"
+                  id="tabContents-pd"
+                  role="tabpanel"
+                  tabindex="0"
+                  aria-labelledby="production"
+                  hidden
+               >
+                  <a class="poster" href="#">
+                     <img src="./image/poster/rebecca03.jpg" alt="뮤지컬 레베카 포스터" />
+                     <div class="overlay">
+                        <p>Musical</p>
+                        <p>레베카</p>
+                        <p>0302 - 0310</p>
+                        <button>TICKET</button>
+                     </div>
+                  </a>
+               </li>
+               <li
+                  class="calContent"
+                  id="tabContents-cal"
+                  role="tabpanel"
+                  tabindex="0"
+                  aria-labelledby="calendar"
+                  hidden
+               >
+                  <a href="#">
+                     <div class="date">
+                        <p>03-02 (토)</p>
+                        <p>14:00</p>
+                     </div>
+                     <div class="playttl">
+                        <p>뮤지컬 <레베카> 10주년 기념공연 앙코르</p>
+                     </div>
+                     <div class="book-btn">
+                        <img class="black" src="./image/ticket-black.png" alt="티켓 아이콘" />
+                        <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘" />
+                     </div>
+                  </a>
+                  <a href="#">
+                     <div class="date">
+                        <p>03-02 (토)</p>
+                        <p>19:00</p>
+                     </div>
+                     <div class="playttl">
+                        <p>뮤지컬 <레베카> 10주년 기념공연 앙코르</p>
+                     </div>
+                     <div class="book-btn">
+                        <img class="black" src="./image/ticket-black.png" alt="티켓 아이콘" />
+                        <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘" />
+                     </div>
+                  </a>
+                  <a href="#">
+                     <div class="date">
+                        <p>03-03 (일)</p>
+                        <p>14:00</p>
+                     </div>
+                     <div class="playttl">
+                        <p>뮤지컬 <레베카> 10주년 기념공연 앙코르</p>
+                     </div>
+                     <div class="book-btn">
+                        <img class="black" src="./image/ticket-black.png" alt="티켓 아이콘" />
+                        <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘" />
+                     </div>
+                  </a>
+                  <a href="#">
+                     <div class="date">
+                        <p>03-03 (일)</p>
+                        <p>19:00</p>
+                     </div>
+                     <div class="playttl">
+                        <p>뮤지컬 <레베카> 10주년 기념공연 앙코르</p>
+                     </div>
+                     <div class="book-btn">
+                        <img class="black" src="./image/ticket-black.png" alt="티켓 아이콘" />
+                        <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘" />
+                     </div>
+                  </a>
+                  <a href="#">
+                     <div class="date">
+                        <p>03-09 (토)</p>
+                        <p>14:00</p>
+                     </div>
+                     <div class="playttl">
+                        <p>뮤지컬 <레베카> 10주년 기념공연 앙코르</p>
+                     </div>
+                     <div class="book-btn">
+                        <img class="black" src="./image/ticket-black.png" alt="티켓 아이콘" />
+                        <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘" />
+                     </div>
+                  </a>
+                  <a href="#">
+                     <div class="date">
+                        <p>03-09 (토)</p>
+                        <p>19:00</p>
+                     </div>
+                     <div class="playttl">
+                        <p>뮤지컬 <레베카> 10주년 기념공연 앙코르</p>
+                     </div>
+                     <div class="book-btn">
+                        <img class="black" src="./image/ticket-black.png" alt="티켓 아이콘" />
+                        <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘" />
+                     </div>
+                  </a>
+                  <a href="#">
+                     <div class="date">
+                        <p>03-10 (일)</p>
+                        <p>14:00</p>
+                     </div>
+                     <div class="playttl">
+                        <p>뮤지컬 <레베카> 10주년 기념공연 앙코르</p>
+                     </div>
+                     <div class="book-btn">
+                        <img class="black" src="./image/ticket-black.png" alt="티켓 아이콘" />
+                        <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘" />
+                     </div>
+                  </a>
+                  <a href="#">
+                     <div class="date">
+                        <p>03-10 (일)</p>
+                        <p>19:00</p>
+                     </div>
+                     <div class="playttl">
+                        <p>뮤지컬 <레베카> 10주년 기념공연 앙코르</p>
+                     </div>
+                     <div class="book-btn">
+                        <img class="black" src="./image/ticket-black.png" alt="티켓 아이콘" />
+                        <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘" />
+                     </div>
+                  </a>
+               </li>
+            </ul>
+            <ul
+               class="panelBox"
+               id="tabPanel-04"
+               role="tabpanel"
+               tabindex="0"
+               aria-labelledby="tab-4"
+               hidden
+            >
+               <li
+                  class="pdContent"
+                  id="tabContents-pd"
+                  role="tabpanel"
+                  tabindex="0"
+                  aria-labelledby="production"
+                  hidden
+               >
+                  <a class="poster" href="#">
+                     <img src="./image/poster/dreamClass04.jpg" alt="드림클래스 포스터" />
+                     <div class="overlay">
+                        <p>Program</p>
+                        <p>드림 클래스</p>
+                        <p>0408 - 0422</p>
+                        <button>TICKET</button>
+                     </div>
+                  </a>
+                  <a class="poster" href="#">
+                     <img src="./image/poster/TheOriginal04.jpeg" alt="김범수 콘서트 포스터" />
+                     <div class="overlay">
+                        <p>Concert</p>
+                        <p>김범수 콘서트<br /><여행, The Original></p>
+                        <p>0420 - 0420</p>
+                        <button>TICKET</button>
+                     </div>
+                  </a>
+               </li>
+               <li
+                  class="calContent"
+                  id="tabContents-cal"
+                  role="tabpanel"
+                  tabindex="0"
+                  aria-labelledby="calendar"
+                  hidden
+               >
+                  <a href="#">
+                     <div class="date">
+                        <p>04-08 (월)</p>
+                        <p>07:30</p>
+                     </div>
+                     <div class="playttl">
+                        <p>드림씨어터 개관 5주년 기념 드림 클래스</p>
+                     </div>
+                     <div class="book-btn">
+                        <img class="black" src="./image/ticket-black.png" alt="티켓 아이콘" />
+                        <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘" />
+                     </div>
+                  </a>
+                  <a href="#">
+                     <div class="date">
+                        <p>04-20 (월)</p>
+                        <p>07:30</p>
+                     </div>
+                     <div class="playttl">
+                        <p>드림씨어터 개관 5주년 기념 드림 클래스</p>
+                     </div>
+                     <div class="book-btn">
+                        <img class="black" src="./image/ticket-black.png" alt="티켓 아이콘" />
+                        <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘" />
+                     </div>
+                  </a>
+                  <a href="#">
+                     <div class="date">
+                        <p>04-20 (토)</p>
+                        <p>18:00</p>
+                     </div>
+                     <div class="playttl">
+                        <p>2024 김범수 콘서트 <여행, The Original></p>
+                     </div>
+                     <div class="book-btn">
+                        <img class="black" src="./image/ticket-black.png" alt="티켓 아이콘" />
+                        <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘" />
+                     </div>
+                  </a>
+               </li>
+            </ul>
+            <ul
+               class="panelBox"
+               id="tabPanel-05"
+               role="tabpanel"
+               tabindex="0"
+               aria-labelledby="tab-5"
+               hidden
+            >
+               <li
+                  class="pdContent"
+                  id="tabContents-pd"
+                  role="tabpanel"
+                  tabindex="0"
+                  aria-labelledby="production"
+                  hidden
+               >
+                  <a class="poster" href="#">
+                     <img src="./image/poster/leeMoonSae05.jpg" alt="이문세 콘서트 포스터" />
+                     <div class="overlay">
+                        <p>Conert</p>
+                        <p>Theatre 이문세</p>
+                        <p>0503 - 0518</p>
+                        <button>TICKET</button>
+                     </div>
+                  </a>
+                  <a class="poster" href="#">
+                     <img src="./image/poster/romeoJuliet05.jpg" alt="발레 로미오와 줄리엣 포스터" />
+                     <div class="overlay">
+                        <p>Dance</p>
+                        <p>매튜 본의<br />'로미오와 줄리엣'</p>
+                        <p>0523 - 0526</p>
+                        <button>TICKET</button>
+                     </div>
+                  </a>
+               </li>
+               <li
+                  class="calContent"
+                  id="tabContents-cal"
+                  role="tabpanel"
+                  tabindex="0"
+                  aria-labelledby="calendar"
+                  hidden
+               >
+                  <a href="#">
+                     <div class="date">
+                        <p>05-03 (금)</p>
+                        <p>19:30</p>
+                     </div>
+                     <div class="playttl">
+                        <p>2024 Theatre 이문세</p>
+                     </div>
+                     <div class="book-btn">
+                        <img class="black" src="./image/ticket-black.png" alt="티켓 아이콘" />
+                        <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘" />
+                     </div>
+                  </a>
+                  <a href="#">
+                     <div class="date">
+                        <p>05-04 (토)</p>
+                        <p>18:00</p>
+                     </div>
+                     <div class="playttl">
+                        <p>2024 Theatre 이문세</p>
+                     </div>
+                     <div class="book-btn">
+                        <img class="black" src="./image/ticket-black.png" alt="티켓 아이콘" />
+                        <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘" />
+                     </div>
+                  </a>
+                  <a href="#">
+                     <div class="date">
+                        <p>05-10 (금)</p>
+                        <p>19:30</p>
+                     </div>
+                     <div class="playttl">
+                        <p>2024 Theatre 이문세</p>
+                     </div>
+                     <div class="book-btn">
+                        <img class="black" src="./image/ticket-black.png" alt="티켓 아이콘" />
+                        <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘" />
+                     </div>
+                  </a>
+                  <a href="#">
+                     <div class="date">
+                        <p>05-11 (토)</p>
+                        <p>18:00</p>
+                     </div>
+                     <div class="playttl">
+                        <p>2024 Theatre 이문세</p>
+                     </div>
+                     <div class="book-btn">
+                        <img class="black" src="./image/ticket-black.png" alt="티켓 아이콘" />
+                        <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘" />
+                     </div>
+                  </a>
+                  <a href="#">
+                     <div class="date">
+                        <p>05-17 (금)</p>
+                        <p>19:30</p>
+                     </div>
+                     <div class="playttl">
+                        <p>2024 Theatre 이문세</p>
+                     </div>
+                     <div class="book-btn">
+                        <img class="black" src="./image/ticket-black.png" alt="티켓 아이콘" />
+                        <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘" />
+                     </div>
+                  </a>
+                  <a href="#">
+                     <div class="date">
+                        <p>05-18 (토)</p>
+                        <p>18:00</p>
+                     </div>
+                     <div class="playttl">
+                        <p>2024 Theatre 이문세</p>
+                     </div>
+                     <div class="book-btn">
+                        <img class="black" src="./image/ticket-black.png" alt="티켓 아이콘" />
+                        <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘" />
+                     </div>
+                  </a>
+                  <a href="#">
+                     <div class="date">
+                        <p>05-23 (목)</p>
+                        <p>19:30</p>
+                     </div>
+                     <div class="playttl">
+                        <p>매튜 본의 '로미오와 줄리엣'</p>
+                     </div>
+                     <div class="book-btn">
+                        <img class="black" src="./image/ticket-black.png" alt="티켓 아이콘" />
+                        <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘" />
+                     </div>
+                  </a>
+                  <a href="#">
+                     <div class="date">
+                        <p>05-24 (금)</p>
+                        <p>14:30</p>
+                     </div>
+                     <div class="playttl">
+                        <p>매튜 본의 '로미오와 줄리엣'</p>
+                     </div>
+                     <div class="book-btn">
+                        <img class="black" src="./image/ticket-black.png" alt="티켓 아이콘" />
+                        <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘" />
+                     </div>
+                  </a>
+                  <a href="#">
+                     <div class="date">
+                        <p>05-24 (금)</p>
+                        <p>19:30</p>
+                     </div>
+                     <div class="playttl">
+                        <p>매튜 본의 '로미오와 줄리엣'</p>
+                     </div>
+                     <div class="book-btn">
+                        <img class="black" src="./image/ticket-black.png" alt="티켓 아이콘" />
+                        <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘" />
+                     </div>
+                  </a>
+                  <a href="#">
+                     <div class="date">
+                        <p>05-25 (토)</p>
+                        <p>14:00</p>
+                     </div>
+                     <div class="playttl">
+                        <p>매튜 본의 '로미오와 줄리엣'</p>
+                     </div>
+                     <div class="book-btn">
+                        <img class="black" src="./image/ticket-black.png" alt="티켓 아이콘" />
+                        <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘" />
+                     </div>
+                  </a>
+                  <a href="#">
+                     <div class="date">
+                        <p>05-25 (토)</p>
+                        <p>19:00</p>
+                     </div>
+                     <div class="playttl">
+                        <p>매튜 본의 '로미오와 줄리엣'</p>
+                     </div>
+                     <div class="book-btn">
+                        <img class="black" src="./image/ticket-black.png" alt="티켓 아이콘" />
+                        <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘" />
+                     </div>
+                  </a>
+                  <a href="#">
+                     <div class="date">
+                        <p>05-26 (일)</p>
+                        <p>14:00</p>
+                     </div>
+                     <div class="playttl">
+                        <p>매튜 본의 '로미오와 줄리엣'</p>
+                     </div>
+                     <div class="book-btn">
+                        <img class="black" src="./image/ticket-black.png" alt="티켓 아이콘" />
+                        <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘" />
+                     </div>
+                  </a>
+               </li>
+            </ul>
+            <ul
+               class="panelBox"
+               id="tabPanel-06"
+               role="tabpanel"
+               tabindex="0"
+               aria-labelledby="tab-6"
+               hidden
+            >
+               <li
+                  class="pdContent"
+                  id="tabContents-pd"
+                  role="tabpanel"
+                  tabindex="0"
+                  aria-labelledby="production"
+                  hidden
+               >
+                  <a class="poster" href="#">
+                     <img src="./image/poster/nctWish06.jpg" alt="NCT 콘서트 포스터" />
+                     <div class="overlay">
+                        <p>Concert</p>
+                        <p>NCT WISH ： SCHOOL of WISH</p>
+                        <p>0601 - 0601</p>
+                        <button>TICKET</button>
+                     </div>
+                  </a>
+               </li>
+               <li
+                  class="calContent"
+                  id="tabContents-cal"
+                  role="tabpanel"
+                  tabindex="0"
+                  aria-labelledby="calendar"
+                  hidden
+               >
+                  <a href="#">
+                     <div class="date">
+                        <p>06-01 (토)</p>
+                        <p>14:00</p>
+                     </div>
+                     <div class="playttl">
+                        <p>NCT WISH ： SCHOOL of WISH</p>
+                     </div>
+                     <div class="book-btn">
+                        <img class="black" src="./image/ticket-black.png" alt="티켓 아이콘" />
+                        <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘" />
+                     </div>
+                  </a>
+                  <a href="#">
+                     <div class="date">
+                        <p>06-01 (토)</p>
+                        <p>19:00</p>
+                     </div>
+                     <div class="playttl">
+                        <p>NCT WISH ： SCHOOL of WISH</p>
+                     </div>
+                     <div class="book-btn">
+                        <img class="black" src="./image/ticket-black.png" alt="티켓 아이콘" />
+                        <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘" />
+                     </div>
+                  </a>
+               </li>
+            </ul>
+            <ul
+               class="panelBox"
+               id="tabPanel-07"
+               role="tabpanel"
+               tabindex="0"
+               aria-labelledby="tab-7"
+               hidden
+            >
+               <li
+                  class="pdContent"
+                  id="tabContents-pd"
+                  role="tabpanel"
+                  tabindex="0"
+                  aria-labelledby="production"
+                  hidden
+               >
+                  <a class="poster" href="#">
+                     <img src="./image/poster/DearEvanHansen07.jpg" alt="뮤지컬 디어 에반 헨슨 포스터" />
+                     <div class="overlay">
+                        <p>Musical</p>
+                        <p>디어 에반 헨슨</p>
+                        <p>0704 - 0721</p>
+                        <button>TICKET</button>
+                     </div>
+                  </a>
+               </li>
+               <li
+                  class="calContent"
+                  id="tabContents-cal"
+                  role="tabpanel"
+                  tabindex="0"
+                  aria-labelledby="calendar"
+                  hidden
+               >
+                  <a href="#">
+                     <div class="date">
+                        <p>07-04 (목)</p>
+                        <p>19:30</p>
+                     </div>
+                     <div class="playttl">
+                        <p>뮤지컬 ＜디어 에반 핸슨＞</p>
+                     </div>
+                     <div class="book-btn">
+                        <img class="black" src="./image/ticket-black.png" alt="티켓 아이콘" />
+                        <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘" />
+                     </div>
+                  </a>
+                  <a href="#">
+                     <div class="date">
+                        <p>07-05 (금)</p>
+                        <p>14:30</p>
+                     </div>
+                     <div class="playttl">
+                        <p>뮤지컬 ＜디어 에반 핸슨＞</p>
+                     </div>
+                     <div class="book-btn">
+                        <img class="black" src="./image/ticket-black.png" alt="티켓 아이콘" />
+                        <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘" />
+                     </div>
+                  </a>
+                  <a href="#">
+                     <div class="date">
+                        <p>07-05 (금)</p>
+                        <p>19:30</p>
+                     </div>
+                     <div class="playttl">
+                        <p>뮤지컬 ＜디어 에반 핸슨＞</p>
+                     </div>
+                     <div class="book-btn">
+                        <img class="black" src="./image/ticket-black.png" alt="티켓 아이콘" />
+                        <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘" />
+                     </div>
+                  </a>
+                  <a href="#">
+                     <div class="date">
+                        <p>07-06 (토)</p>
+                        <p>14:00</p>
+                     </div>
+                     <div class="playttl">
+                        <p>뮤지컬 ＜디어 에반 핸슨＞</p>
+                     </div>
+                     <div class="book-btn">
+                        <img class="black" src="./image/ticket-black.png" alt="티켓 아이콘" />
+                        <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘" />
+                     </div>
+                  </a>
+                  <a href="#">
+                     <div class="date">
+                        <p>07-06 (토)</p>
+                        <p>19:00</p>
+                     </div>
+                     <div class="playttl">
+                        <p>뮤지컬 ＜디어 에반 핸슨＞</p>
+                     </div>
+                     <div class="book-btn">
+                        <img class="black" src="./image/ticket-black.png" alt="티켓 아이콘" />
+                        <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘" />
+                     </div>
+                  </a>
+                  <a href="#">
+                     <div class="date">
+                        <p>07-07 (일)</p>
+                        <p>15:00</p>
+                     </div>
+                     <div class="playttl">
+                        <p>뮤지컬 ＜디어 에반 핸슨＞</p>
+                     </div>
+                     <div class="book-btn">
+                        <img class="black" src="./image/ticket-black.png" alt="티켓 아이콘" />
+                        <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘" />
+                     </div>
+                  </a>
+                  <a href="#">
+                     <div class="date">
+                        <p>07-13 (토)</p>
+                        <p>14:00</p>
+                     </div>
+                     <div class="playttl">
+                        <p>뮤지컬 ＜디어 에반 핸슨＞</p>
+                     </div>
+                     <div class="book-btn">
+                        <img class="black" src="./image/ticket-black.png" alt="티켓 아이콘" />
+                        <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘" />
+                     </div>
+                  </a>
+                  <a href="#">
+                     <div class="date">
+                        <p>07-13 (토)</p>
+                        <p>19:00</p>
+                     </div>
+                     <div class="playttl">
+                        <p>뮤지컬 ＜디어 에반 핸슨＞</p>
+                     </div>
+                     <div class="book-btn">
+                        <img class="black" src="./image/ticket-black.png" alt="티켓 아이콘" />
+                        <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘" />
+                     </div>
+                  </a>
+                  <a href="#">
+                     <div class="date">
+                        <p>07-14 (일)</p>
+                        <p>14:00</p>
+                     </div>
+                     <div class="playttl">
+                        <p>뮤지컬 ＜디어 에반 핸슨＞</p>
+                     </div>
+                     <div class="book-btn">
+                        <img class="black" src="./image/ticket-black.png" alt="티켓 아이콘" />
+                        <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘" />
+                     </div>
+                  </a>
+                  <a href="#">
+                     <div class="date">
+                        <p>07-14 (일)</p>
+                        <p>19:00</p>
+                     </div>
+                     <div class="playttl">
+                        <p>뮤지컬 ＜디어 에반 핸슨＞</p>
+                     </div>
+                     <div class="book-btn">
+                        <img class="black" src="./image/ticket-black.png" alt="티켓 아이콘" />
+                        <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘" />
+                     </div>
+                  </a>
+                  <a href="#">
+                     <div class="date">
+                        <p>07-20 (토)</p>
+                        <p>14:00</p>
+                     </div>
+                     <div class="playttl">
+                        <p>뮤지컬 ＜디어 에반 핸슨＞</p>
+                     </div>
+                     <div class="book-btn">
+                        <img class="black" src="./image/ticket-black.png" alt="티켓 아이콘" />
+                        <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘" />
+                     </div>
+                  </a>
+                  <a href="#">
+                     <div class="date">
+                        <p>07-20 (토)</p>
+                        <p>19:00</p>
+                     </div>
+                     <div class="playttl">
+                        <p>뮤지컬 ＜디어 에반 핸슨＞</p>
+                     </div>
+                     <div class="book-btn">
+                        <img class="black" src="./image/ticket-black.png" alt="티켓 아이콘" />
+                        <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘" />
+                     </div>
+                  </a>
+                  <a href="#">
+                     <div class="date">
+                        <p>07-21 (일)</p>
+                        <p>14:00</p>
+                     </div>
+                     <div class="playttl">
+                        <p>뮤지컬 ＜디어 에반 핸슨＞</p>
+                     </div>
+                     <div class="book-btn">
+                        <img class="black" src="./image/ticket-black.png" alt="티켓 아이콘" />
+                        <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘" />
+                     </div>
+                  </a>
+                  <a href="#">
+                     <div class="date">
+                        <p>07-21 (일)</p>
+                        <p>19:00</p>
+                     </div>
+                     <div class="playttl">
+                        <p>뮤지컬 ＜디어 에반 핸슨＞</p>
+                     </div>
+                     <div class="book-btn">
+                        <img class="black" src="./image/ticket-black.png" alt="티켓 아이콘" />
+                        <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘" />
+                     </div>
+                  </a>
+               </li>
+            </ul>
+            <ul
+               class="panelBox"
+               id="tabPanel-08"
+               role="tabpanel"
+               tabindex="0"
+               aria-labelledby="tab-8"
+               hidden
+            >
+               <li
+                  class="pdContent"
+                  id="tabContents-pd"
+                  role="tabpanel"
+                  tabindex="0"
+                  aria-labelledby="production"
+                  hidden
+               >
+                  <a class="poster" href="#">
+                     <img src="./image/poster/theMagicStar08.jpg" alt="더매직스타 콘서트 포스터" />
+                     <div class="overlay">
+                        <p>Concert</p>
+                        <p>더매직스타</p>
+                        <p>0809 - 0811</p>
+                        <button>TICKET</button>
+                     </div>
+                  </a>
+               </li>
+               <li
+                  class="calContent"
+                  id="tabContents-cal"
+                  role="tabpanel"
+                  tabindex="0"
+                  aria-labelledby="calendar"
+                  hidden
+               >
+                  <a href="#">
+                     <div class="date">
+                        <p>08-09 (금)</p>
+                        <p>19:30</p>
+                     </div>
+                     <div class="playttl">
+                        <p><더매직스타> TOP7 전국투어 매직쇼</p>
+                     </div>
+                     <div class="book-btn">
+                        <img class="black" src="./image/ticket-black.png" alt="티켓 아이콘" />
+                        <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘" />
+                     </div>
+                  </a>
+                  <a href="#">
+                     <div class="date">
+                        <p>08-10 (토)</p>
+                        <p>14:00</p>
+                     </div>
+                     <div class="playttl">
+                        <p><더매직스타> TOP7 전국투어 매직쇼</p>
+                     </div>
+                     <div class="book-btn">
+                        <img class="black" src="./image/ticket-black.png" alt="티켓 아이콘" />
+                        <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘" />
+                     </div>
+                  </a>
+                  <a href="#">
+                     <div class="date">
+                        <p>08-10 (토)</p>
+                        <p>19:00</p>
+                     </div>
+                     <div class="playttl">
+                        <p><더매직스타> TOP7 전국투어 매직쇼</p>
+                     </div>
+                     <div class="book-btn">
+                        <img class="black" src="./image/ticket-black.png" alt="티켓 아이콘" />
+                        <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘" />
+                     </div>
+                  </a>
+                  <a href="#">
+                     <div class="date">
+                        <p>08-11 (일)</p>
+                        <p>14:00</p>
+                     </div>
+                     <div class="playttl">
+                        <p><더매직스타> TOP7 전국투어 매직쇼</p>
+                     </div>
+                     <div class="book-btn">
+                        <img class="black" src="./image/ticket-black.png" alt="티켓 아이콘" />
+                        <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘" />
+                     </div>
+                  </a>
+                  <a href="#">
+                     <div class="date">
+                        <p>08-11 (일)</p>
+                        <p>18:30</p>
+                     </div>
+                     <div class="playttl">
+                        <p><더매직스타> TOP7 전국투어 매직쇼</p>
+                     </div>
+                     <div class="book-btn">
+                        <img class="black" src="./image/ticket-black.png" alt="티켓 아이콘" />
+                        <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘" />
+                     </div>
+                  </a>
+               </li>
+            </ul>
+            <ul
+               class="panelBox"
+               id="tabPanel-09"
+               role="tabpanel"
+               tabindex="0"
+               aria-labelledby="tab-9"
+               hidden
+            >
+               <li
+                  class="pdContent"
+                  id="tabContents-pd"
+                  role="tabpanel"
+                  tabindex="0"
+                  aria-labelledby="production"
+                  hidden
+               >
+                  <a class="poster" href="#">
+                     <em
+                        >공연 <br />
+                        예정</em
+                     >
+                     <img src="./image/poster/jangWoo09.jpeg" alt="장우영 팬미팅 포스터" />
+                     <div class="overlay">
+                        <p>Meeting</p>
+                        <p>Jang Wooyoung Fan Meeting<br />＜Be Young＞</p>
+                        <p>0928 - 0929</p>
+                        <button>TICKET</button>
+                     </div>
+                  </a>
+               </li>
+               <li
+                  class="calContent"
+                  id="tabContents-cal"
+                  role="tabpanel"
+                  tabindex="0"
+                  aria-labelledby="calendar"
+                  hidden
+               >
+                  <a href="#">
+                     <div class="date">
+                        <p>09-28 (토)</p>
+                        <p>18:00</p>
+                     </div>
+                     <div class="playttl">
+                        <p>2024 Jang Wooyoung Fan Meeting ＜Be Young＞ in BUSAN</p>
+                     </div>
+                     <div class="book-btn">
+                        <img class="black" src="./image/ticket-black.png" alt="티켓 아이콘" />
+                        <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘" />
+                     </div>
+                  </a>
+                  <a href="#">
+                     <div class="date">
+                        <p>09-29 (일)</p>
+                        <p>17:00</p>
+                     </div>
+                     <div class="playttl">
+                        <p>2024 Jang Wooyoung Fan Meeting ＜Be Young＞ in BUSAN</p>
+                     </div>
+                     <div class="book-btn">
+                        <img class="black" src="./image/ticket-black.png" alt="티켓 아이콘" />
+                        <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘" />
+                     </div>
+                  </a>
+               </li>
+            </ul>
+            <ul
+               class="panelBox"
+               id="tabPanel-10"
+               role="tabpanel"
+               tabindex="0"
+               aria-labelledby="tab-10"
+               hidden
+            >
+               <li
+                  class="pdContent"
+                  id="tabContents-pd"
+                  role="tabpanel"
+                  tabindex="0"
+                  aria-labelledby="production"
+                  hidden
+               >
+                  <a class="poster" href="#">
+                     <em
+                        >공연 <br />
+                        예정</em
+                     >
+                     <img src="./image/poster/hades1011.jpg" alt="뮤지컬 하데스타운 포스터" />
+                     <div class="overlay">
+                        <p>Musical</p>
+                        <p>하데스타운</p>
+                        <p>1018 - 1103</p>
+                        <button>TICKET</button>
+                     </div>
+                  </a>
+                  <a class="poster" href="#">
+                     <em
+                        >공연 <br />
+                        예정</em
+                     >
+                     <img src="./image/poster/hamlet10.jpg" alt="연극 햄릿 포스터" />
+                     <div class="overlay">
+                        <p>Theatre</p>
+                        <p>햄릿</p>
+                        <p>1004 - 1006</p>
+                        <button>TICKET</button>
+                     </div>
+                  </a>
+               </li>
+               <li
+                  class="calContent"
+                  id="tabContents-cal"
+                  role="tabpanel"
+                  tabindex="0"
+                  aria-labelledby="calendar"
+                  hidden
+               >
+                  <a href="#">
+                     <div class="date">
+                        <p>10-04 (금)</p>
+                        <p>19:30</p>
+                     </div>
+                     <div class="playttl">
+                        <p>연극 <햄릿></p>
+                     </div>
+                     <div class="book-btn">
+                        <img class="black" src="./image/ticket-black.png" alt="티켓 아이콘" />
+                        <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘" />
+                     </div>
+                  </a>
+                  <a href="#">
+                     <div class="date">
+                        <p>10-05 (토)</p>
+                        <p>14:00</p>
+                     </div>
+                     <div class="playttl">
+                        <p>연극 <햄릿></p>
+                     </div>
+                     <div class="book-btn">
+                        <img class="black" src="./image/ticket-black.png" alt="티켓 아이콘" />
+                        <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘" />
+                     </div>
+                  </a>
+                  <a href="#">
+                     <div class="date">
+                        <p>10-05 (토)</p>
+                        <p>19:00</p>
+                     </div>
+                     <div class="playttl">
+                        <p>연극 <햄릿></p>
+                     </div>
+                     <div class="book-btn">
+                        <img class="black" src="./image/ticket-black.png" alt="티켓 아이콘" />
+                        <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘" />
+                     </div>
+                  </a>
+                  <a href="#">
+                     <div class="date">
+                        <p>10-06 (일)</p>
+                        <p>14:00</p>
+                     </div>
+                     <div class="playttl">
+                        <p>연극 <햄릿></p>
+                     </div>
+                     <div class="book-btn">
+                        <img class="black" src="./image/ticket-black.png" alt="티켓 아이콘" />
+                        <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘" />
+                     </div>
+                  </a>
+                  <a href="#">
+                     <div class="date">
+                        <p>10-06 (일)</p>
+                        <p>19:00</p>
+                     </div>
+                     <div class="playttl">
+                        <p>연극 <햄릿></p>
+                     </div>
+                     <div class="book-btn">
+                        <img class="black" src="./image/ticket-black.png" alt="티켓 아이콘" />
+                        <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘" />
+                     </div>
+                  </a>
+                  <a href="#">
+                     <div class="date">
+                        <p>10-18 (금)</p>
+                        <p>19:30</p>
+                     </div>
+                     <div class="playttl">
+                        <p>뮤지컬 <하데스타운></p>
+                     </div>
+                     <div class="book-btn">
+                        <img class="black" src="./image/ticket-black.png" alt="티켓 아이콘" />
+                        <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘" />
+                     </div>
+                  </a>
+                  <a href="#">
+                     <div class="date">
+                        <p>10-19 (토)</p>
+                        <p>14:00</p>
+                     </div>
+                     <div class="playttl">
+                        <p>뮤지컬 <하데스타운></p>
+                     </div>
+                     <div class="book-btn">
+                        <img class="black" src="./image/ticket-black.png" alt="티켓 아이콘" />
+                        <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘" />
+                     </div>
+                  </a>
+                  <a href="#">
+                     <div class="date">
+                        <p>10-19 (토)</p>
+                        <p>19:00</p>
+                     </div>
+                     <div class="playttl">
+                        <p>뮤지컬 <하데스타운></p>
+                     </div>
+                     <div class="book-btn">
+                        <img class="black" src="./image/ticket-black.png" alt="티켓 아이콘" />
+                        <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘" />
+                     </div>
+                  </a>
+                  <a href="#">
+                     <div class="date">
+                        <p>10-20 (일)</p>
+                        <p>14:00</p>
+                     </div>
+                     <div class="playttl">
+                        <p>뮤지컬 <하데스타운></p>
+                     </div>
+                     <div class="book-btn">
+                        <img class="black" src="./image/ticket-black.png" alt="티켓 아이콘" />
+                        <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘" />
+                     </div>
+                  </a>
+                  <a href="#">
+                     <div class="date">
+                        <p>10-20 (일)</p>
+                        <p>19:00</p>
+                     </div>
+                     <div class="playttl">
+                        <p>뮤지컬 <하데스타운></p>
+                     </div>
+                     <div class="book-btn">
+                        <img class="black" src="./image/ticket-black.png" alt="티켓 아이콘" />
+                        <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘" />
+                     </div>
+                  </a>
+                  <a href="#">
+                     <div class="date">
+                        <p>10-25 (금)</p>
+                        <p>19:30</p>
+                     </div>
+                     <div class="playttl">
+                        <p>뮤지컬 <하데스타운></p>
+                     </div>
+                     <div class="book-btn">
+                        <img class="black" src="./image/ticket-black.png" alt="티켓 아이콘" />
+                        <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘" />
+                     </div>
+                  </a>
+                  <a href="#">
+                     <div class="date">
+                        <p>10-26 (토)</p>
+                        <p>14:00</p>
+                     </div>
+                     <div class="playttl">
+                        <p>뮤지컬 <하데스타운></p>
+                     </div>
+                     <div class="book-btn">
+                        <img class="black" src="./image/ticket-black.png" alt="티켓 아이콘" />
+                        <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘" />
+                     </div>
+                  </a>
+                  <a href="#">
+                     <div class="date">
+                        <p>10-26 (토)</p>
+                        <p>19:00</p>
+                     </div>
+                     <div class="playttl">
+                        <p>뮤지컬 <하데스타운></p>
+                     </div>
+                     <div class="book-btn">
+                        <img class="black" src="./image/ticket-black.png" alt="티켓 아이콘" />
+                        <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘" />
+                     </div>
+                  </a>
+                  <a href="#">
+                     <div class="date">
+                        <p>10-27 (일)</p>
+                        <p>14:00</p>
+                     </div>
+                     <div class="playttl">
+                        <p>뮤지컬 <하데스타운></p>
+                     </div>
+                     <div class="book-btn">
+                        <img class="black" src="./image/ticket-black.png" alt="티켓 아이콘" />
+                        <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘" />
+                     </div>
+                  </a>
+                  <a href="#">
+                     <div class="date">
+                        <p>10-27 (일)</p>
+                        <p>19:00</p>
+                     </div>
+                     <div class="playttl">
+                        <p>뮤지컬 <하데스타운></p>
+                     </div>
+                     <div class="book-btn">
+                        <img class="black" src="./image/ticket-black.png" alt="티켓 아이콘" />
+                        <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘" />
+                     </div>
+                  </a>
+               </li>
+            </ul>
+            <ul
+               class="panelBox"
+               id="tabPanel-11"
+               role="tabpanel"
+               tabindex="0"
+               aria-labelledby="tab-11"
+               hidden
+            >
+               <li
+                  class="pdContent"
+                  id="tabContents-pd"
+                  role="tabpanel"
+                  tabindex="0"
+                  aria-labelledby="production"
+                  hidden
+               >
+                  <a class="poster" href="#">
+                     <em
+                        >공연 <br />
+                        예정</em
+                     >
+                     <img src="./image/poster/hades1011.jpg" alt="뮤지컬 하데스타운 포스터" />
+                     <div class="overlay">
+                        <p>Musical</p>
+                        <p>하데스타운</p>
+                        <p>1018 - 1103</p>
+                        <button>TICKET</button>
+                     </div>
+                  </a>
+                  <a class="poster" href="#">
+                     <em
+                        >공연 <br />
+                        예정</em
+                     >
+                     <img src="./image/poster/kinkyBoots11.jpg" alt="뮤지컬 킹키부츠 포스터" />
+                     <div class="overlay">
+                        <p>Musical</p>
+                        <p>킹키부츠</p>
+                        <p>1123 - 1201</p>
+                        <button>TICKET</button>
+                     </div>
+                  </a>
+               </li>
+               <li
+                  class="calContent"
+                  id="tabContents-cal"
+                  role="tabpanel"
+                  tabindex="0"
+                  aria-labelledby="calendar"
+                  hidden
+               >
+                  <a href="#">
+                     <div class="date">
+                        <p>11-01 (금)</p>
+                        <p>19:30</p>
+                     </div>
+                     <div class="playttl">
+                        <p>뮤지컬 <하데스타운></p>
+                     </div>
+                     <div class="book-btn">
+                        <img class="black" src="./image/ticket-black.png" alt="티켓 아이콘" />
+                        <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘" />
+                     </div>
+                  </a>
+                  <a href="#">
+                     <div class="date">
+                        <p>11-02 (토)</p>
+                        <p>14:00</p>
+                     </div>
+                     <div class="playttl">
+                        <p>뮤지컬 <하데스타운></p>
+                     </div>
+                     <div class="book-btn">
+                        <img class="black" src="./image/ticket-black.png" alt="티켓 아이콘" />
+                        <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘" />
+                     </div>
+                  </a>
+                  <a href="#">
+                     <div class="date">
+                        <p>11-02 (토)</p>
+                        <p>19:00</p>
+                     </div>
+                     <div class="playttl">
+                        <p>뮤지컬 <하데스타운></p>
+                     </div>
+                     <div class="book-btn">
+                        <img class="black" src="./image/ticket-black.png" alt="티켓 아이콘" />
+                        <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘" />
+                     </div>
+                  </a>
+                  <a href="#">
+                     <div class="date">
+                        <p>11-03 (일)</p>
+                        <p>14:00</p>
+                     </div>
+                     <div class="playttl">
+                        <p>뮤지컬 <하데스타운></p>
+                     </div>
+                     <div class="book-btn">
+                        <img class="black" src="./image/ticket-black.png" alt="티켓 아이콘" />
+                        <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘" />
+                     </div>
+                  </a>
+                  <a href="#">
+                     <div class="date">
+                        <p>11-03 (일)</p>
+                        <p>19:00</p>
+                     </div>
+                     <div class="playttl">
+                        <p>뮤지컬 <하데스타운></p>
+                     </div>
+                     <div class="book-btn">
+                        <img class="black" src="./image/ticket-black.png" alt="티켓 아이콘" />
+                        <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘" />
+                     </div>
+                  </a>
+                  <a href="#">
+                     <div class="date">
+                        <p>11-23 (토)</p>
+                        <p>14:00</p>
+                     </div>
+                     <div class="playttl">
+                        <p>뮤지컬〈킹키부츠〉</p>
+                     </div>
+                     <div class="book-btn">
+                        <img class="black" src="./image/ticket-black.png" alt="티켓 아이콘" />
+                        <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘" />
+                     </div>
+                  </a>
+                  <a href="#">
+                     <div class="date">
+                        <p>11-23 (토)</p>
+                        <p>19:00</p>
+                     </div>
+                     <div class="playttl">
+                        <p>뮤지컬〈킹키부츠〉</p>
+                     </div>
+                     <div class="book-btn">
+                        <img class="black" src="./image/ticket-black.png" alt="티켓 아이콘" />
+                        <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘" />
+                     </div>
+                  </a>
+                  <a href="#">
+                     <div class="date">
+                        <p>11-24 (일)</p>
+                        <p>14:00</p>
+                     </div>
+                     <div class="playttl">
+                        <p>뮤지컬〈킹키부츠〉</p>
+                     </div>
+                     <div class="book-btn">
+                        <img class="black" src="./image/ticket-black.png" alt="티켓 아이콘" />
+                        <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘" />
+                     </div>
+                  </a>
+                  <a href="#">
+                     <div class="date">
+                        <p>11-24 (일)</p>
+                        <p>19:00</p>
+                     </div>
+                     <div class="playttl">
+                        <p>뮤지컬〈킹키부츠〉</p>
+                     </div>
+                     <div class="book-btn">
+                        <img class="black" src="./image/ticket-black.png" alt="티켓 아이콘" />
+                        <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘" />
+                     </div>
+                  </a>
+                  <a href="#">
+                     <div class="date">
+                        <p>11-30 (토)</p>
+                        <p>14:00</p>
+                     </div>
+                     <div class="playttl">
+                        <p>뮤지컬〈킹키부츠〉</p>
+                     </div>
+                     <div class="book-btn">
+                        <img class="black" src="./image/ticket-black.png" alt="티켓 아이콘" />
+                        <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘" />
+                     </div>
+                  </a>
+                  <a href="#">
+                     <div class="date">
+                        <p>11-30 (토)</p>
+                        <p>19:00</p>
+                     </div>
+                     <div class="playttl">
+                        <p>뮤지컬〈킹키부츠〉</p>
+                     </div>
+                     <div class="book-btn">
+                        <img class="black" src="./image/ticket-black.png" alt="티켓 아이콘" />
+                        <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘" />
+                     </div>
+                  </a>
+               </li>
+            </ul>
+            <ul
+               class="panelBox"
+               id="tabPanel-12"
+               role="tabpanel"
+               tabindex="0"
+               aria-labelledby="tab-12"
+               hidden
+            >
+               <li
+                  class="pdContent"
+                  id="tabContents-pd"
+                  role="tabpanel"
+                  tabindex="0"
+                  aria-labelledby="production"
+                  hidden
+               >
+                  <a class="poster" href="#">
+                     <em
+                        >공연 <br />
+                        예정</em
+                     >
+                     <img src="./image/poster/kinkyBoots11.jpg" alt="뮤지컬 킹키부츠 포스터" />
+                     <div class="overlay">
+                        <p>Musical</p>
+                        <p>킹키부츠</p>
+                        <p>1123 - 1201</p>
+                        <button>TICKET</button>
+                     </div>
+                  </a>
+               </li>
+               <li
+                  class="calContent"
+                  id="tabContents-cal"
+                  role="tabpanel"
+                  tabindex="0"
+                  aria-labelledby="calendar"
+                  hidden
+               >
+                  <a href="#">
+                     <div class="date">
+                        <p>12-01 (일)</p>
+                        <p>14:00</p>
+                     </div>
+                     <div class="playttl">
+                        <p>뮤지컬〈킹키부츠〉</p>
+                     </div>
+                     <div class="book-btn">
+                        <img class="black" src="./image/ticket-black.png" alt="티켓 아이콘" />
+                        <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘" />
+                     </div>
+                  </a>
+                  <a href="#">
+                     <div class="date">
+                        <p>12-01 (일)</p>
+                        <p>19:00</p>
+                     </div>
+                     <div class="playttl">
+                        <p>뮤지컬〈킹키부츠〉</p>
+                     </div>
+                     <div class="book-btn">
+                        <img class="black" src="./image/ticket-black.png" alt="티켓 아이콘" />
+                        <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘" />
+                     </div>
+                  </a>
+               </li>
+            </ul>
+         </div>
+      </section>
+      <!-- 섹션2 -->
+      <!-- 주요 서비스 & 공지사항-->
+      <section class="section02">
+         <!-- 주요 서비스 - 아이콘 형식 -->
+         <div class="service">
+            <ul>
+               <li>
+                  <a href="#"><img src="./image/오시는길.png" alt="오시는길 이미지" />오시는 길</a>
+               </li>
+               <li>
+                  <a href="#"><img src="./image/주차안내.png" alt="주차안내 이미지" />주차안내</a>
+               </li>
+               <li>
+                  <a href="#"><img src="./image/예매안내.png" alt="예매안내 이미지" />예매안내</a>
+               </li>
+               <li>
+                  <a href="#"><img src="./image/예매확인.png" alt="예매확인 이미지" />예매확인</a>
+               </li>
+               <li>
+                  <a href="#"
+                     ><img src="./image/좌석배치도.png" alt="좌석배치도 이미지" />좌석배치도</a
+                  >
+               </li>
+               <li>
+                  <a href="#"><img src="./image/FAQ.png" alt="FAQ 이미지" />FAQ</a>
+               </li>
+            </ul>
+         </div>
+      </section>
+      <!-- 섹션3 -->
+      <!-- 인포 -->
+      <section class="section03">
+         <div id="info">
+            <div class="info_inr">
+               <div class="n_list">
+                  <ul>
+                     <li data-aos="fade-up">
+                        <div class="day">
+                           <p class="day-num">27</p>
+                           <p class="day-month">09.<br />2024</p>
+                        </div>
+                        <div class="txt">
+                           <div class="cont cont-bar">
+                              <a href="#"
+                                 ><p>뮤지컬〈킹키부츠〉 티켓오픈</p></a
+                              >
+                           </div>
+                        </div>
+                        <div class="n_btn">
+                           <a href="#"><img src="./image/next-white.png" alt="화살표 아이콘" /></a>
+                        </div>
+                     </li>
+                     <li data-aos="fade-up">
+                        <div class="day">
+                           <p class="day-num">20</p>
+                           <p class="day-month">09.<br />2024</p>
+                        </div>
+                        <div class="txt">
+                           <div class="cont cont-bar">
+                              <a href="#"
+                                 ><p>뮤지컬 하데스타운 부산 공연 9/11(수) 14시 선예매 티켓 오픈</p></a
+                              >
+                           </div>
+                        </div>
+                        <div class="n_btn">
+                           <a href="#"><img src="./image/next-white.png" alt="화살표 아이콘" /></a>
+                        </div>
+                     </li>
+                     <li data-aos="fade-up">
+                        <div class="day">
+                           <p class="day-num">17</p>
+                           <p class="day-month">09.<br />2024</p>
+                        </div>
+                        <div class="txt">
+                           <div class="cont cont-bar">
+                              <a href="#"
+                                 ><p>뮤지컬〈젠틀맨스 가이드 : 사랑과 살인편〉티켓오픈</p></a
+                              >
+                           </div>
+                        </div>
+                        <div class="n_btn">
+                           <a href="#"><img src="./image/next-white.png" alt="화살표 아이콘" /></a>
+                        </div>
+                     </li>
+                  </ul>
+               </div>
+               <div class="notice">
+                  <a href="#"><h4>공지사항</h4></a>
+              </div>
+          </div>
+         </div>
+      </div>
+      </section>
+      <!-- //본문 -->
+      <!-- 푸터 -->
+      <footer>
+         <div class="infoArea">
+            <ul class="info">
+               <li><a href="#">오시는 길</a></li>
+               <li><a href="#">사이트맵</a></li>
+               <li><a href="#">이용약관</a></li>
+               <li><a href="#">개인정보처리방침</a></li>
+               <li><a href="#">영상정보처리기기 운영·관리 방침</a></li>
+            </ul>
+         </div>
+         <div class="ft-container">
+            <div class="addrArea">
+               <div class="logo-footer">
+                  <img src="./image/logo_dream_2.png" alt="드림씨어터 로고 이미지" />
+               </div>
+               <address>
+                  <p><b>드림씨어터</b></p>
+                  <p>
+                     <b> 주소 </b><span>: 부산광역시 남구 전포대로 133, 3층</span><b> 대표 </b
+                     ><span>: 설도권</span><b> 사업자등록번호 </b><span>: 261-81-23382</span>
+                  </p>
+                  <p>
+                     <b> 통신판매신고번호 </b><span>: 제2020-부산남구-0104호</span><b> 전화 </b
+                     ><span>: 1833-3755</span><b> Mail </b
+                     ><span>: webmaster@dreamtheatre.co.kr</span>
+                  </p>
+               </address>
+               <div class="link">
+                  <a href="https://www.facebook.com/dreamtheatrebusan" target="_blank"
+                     ><img src="./image/sns_facebook.png" alt="페이스북 아이콘 이미지"
+                  /></a>
+                  <a href="https://www.instagram.com/dreamtheatre_busan/" target="_blank"
+                     ><img src="./image/sns_instagram.png" alt="인스타그램 아이콘 이미지"
+                  /></a>
+                  <a href="https://blog.naver.com/dream_theatre" target="_blank"
+                     ><img src="./image/sns_blog.png" alt="네이버 블로그 아이콘 이미지"
+                  /></a>
+               </div>
+            </div>
+            <p>Copyright 2019 CLIP SERVICE Inc. All Right reserved.</p>
+         </div>
+      </footer>
+      <!-- <script src="./js/test.js"></script> -->
+       <script src="./js/production.js"></script>
+        <!-- <script src="./js/new.js"></script> -->
+      <script src="./js/mainSlide.js"></script>
+      <script src="./js/headerSlide.js"></script>
+      <script>
+         AOS.init({
+            offset: 30, // offset (in px) from the original trigger point
+            delay: 0, // values from 0 to 3000, with step 50ms
+            duration: 1000, // values from 0 to 3000, with step 50ms
+            easing: "ease-in-out", // default easing for AOS animations
+         });
+      </script>
+   </body>
+</html>

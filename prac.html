@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 프로덕션 & 캘린더 -->
+    <section class="section01">
+        <!-- 프로덕션/캘린더 탭 내비 -->
+        <div class="overviewNavi">
+            <ul class="overview-tabs" role="tablist" aria-labelledby="year">
+                <li>
+                    <button id="production" role="tab" aria-controls="wrap-tabContents-01" aria-selected="false">
+                        <i class="fa-solid fa-masks-theater"></i>프로덕션
+                    </button>
+                </li>
+                <li>
+                    <button id="calendar" role="tab" aria-controls="wrap-tabContents-02" aria-selected="false">
+                        <i class="fa-regular fa-calendar"></i>캘린더
+                    </button>
+                </li>
+            </ul>
+        </div>
+        <!-- 월(月) 탭 내비 -->
+        <div class="monthNavi">
+            <h2 id="year">2024</h2>
+            <ul class="month-tabs" role="tablist" aria-labelledby="year">
+                <li><button id="tab-1"  role="tab" aria-controls="tabPanel-cal-01"  aria-selected="false"> <span>1</span> 월</button></li>
+                <li><button id="tab-2"  role="tab" aria-controls="tabPanel-cal-02"  aria-selected="false"><span>2</span> 월</button></li>
+                <li><button id="tab-3"  role="tab" aria-controls="tabPanel-cal-03"  aria-selected="false"><span>3 </span>월</button></li>
+                <li><button id="tab-4"  role="tab" aria-controls="tabPanel-cal-04"  aria-selected="false"><span>4 </span>월</button></li>
+                <li><button id="tab-5"  role="tab" aria-controls="tabPanel-cal-05"  aria-selected="false"><span>5 </span>월</button></li>
+                <li><button id="tab-6"  role="tab" aria-controls="tabPanel-cal-06"  aria-selected="false"><span>6 </span>월</button></li>
+                <li><button id="tab-7"  role="tab" aria-controls="tabPanel-cal-07"  aria-selected="false"><span>7 </span>월</button></li>
+                <li><button id="tab-8"  role="tab" aria-controls="tabPanel-cal-08"  aria-selected="false"><span>8 </span>월</button></li>
+                <li><button id="tab-9"  role="tab" aria-controls="tabPanel-cal-09"  aria-selected="false"><span>9 </span>월</button></li>
+                <li><button id="tab-10" role="tab" aria-controls="tabPanel-cal-10" aria-selected="false"><span>10</span>월</button></li>
+                <li><button id="tab-11" role="tab" aria-controls="tabPanel-cal-11" aria-selected="false"><span>11</span>월</button></li>
+                <li><button id="tab-12" role="tab" aria-controls="tabPanel-cal-12" aria-selected="false"><span>12</span>월</button></li>
+                <li><button id="tab-prev" role="button" class="arr"><img src="./image/prev.png" alt="이전"></button></li>
+                <li><button id="tab-next" role="button" class="arr"><img src="./image/next.png" alt="다음"></button></li>
+            </ul>
+        </div>
+        <!-- 프로덕션 탭 패널 -->
+        <div id="wrap-tabContents-01" aria-labelledby="production">
+            <ul class="boxView" >
+                <li>
+                    <a class="poster" href="">
+                        <img src="./image/레미제라블.jpg" alt="">
+                        <div>
+                            <p>Musical</p>
+                            <p>레미제라블</p>
+                            <p>0109 - 0111</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a class="poster" href="">
+                        <img src="./image/phantom.jpg" alt="">
+                        <div>
+                            <p>Musical</p>
+                            <p>오페라의 유령</p>
+                            <p>0120 - 0131</p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+            <ul>
+
+            </ul>
+        </div>
+        <!-- 캘린더 탭 패널 -->
+        <div id="wrap-tabContents-02" role="tabpanel"  tabindex="0" aria-labelledby="calendar">
+            <ul id="tabPanel-cal-01" hidden role="tabpanel"  tabindex="0" aria-labelledby="tab-1">
+                <li class="day-list">
+                    <a href="">
+                        <div class="date">
+                            <p>1월</p>
+                            <p>20:00 (토)</p>
+                        </div>
+                        <div class="playttl">
+                            <p>뮤지컬 <레미제라블></p>
+                        </div>
+                        <div class="book-btn">
+                            <img class="black" src="./image/ticket-black.png" alt="티켓 아이콘">
+                            <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘">
+                        </div>
+                    </a>
+                </li>
+            </ul>
+            <ul>
+
+            </ul>
+        </div>
+    </section>
+    button#production 누르면 #wrap-tabContents-01패널 나오고
+    button#calendar 누르면 #wrap-tabContents-02패널 나오는 자바스크립트 만들어줘
+
+</body>
+</html>
